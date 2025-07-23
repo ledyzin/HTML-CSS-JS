@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Preenche toda a tela, mesmo cortando */
+    z-index: -1;
+}
+
+body {
+    overflow: auto;
+}
+
+.conteudo {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    margin-top: 20vh;
+    
+}
+
+
+
+
+
+/* From Uiverse.io by adamgiebl */ 
+
+.card {
+    position: relative;
+    top: -40px;
+    width: 300px;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.438);
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease;
+    
+    /* Centralizar */
+    margin: 100px auto;   /* Espaço no topo + centralização horizontal */
+    display: block;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    position: relative;
+    top: 20px;
+    right: -109px;
+    border-radius: 50%;
+    width: 30%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-content h2 {
+    position: relative;
+    top: 30px;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.card-content p {
+    position: relative;
+    top: 30px;
+    font-size: 0.95rem;
+    color: #ffffff;
+}
+
+.card-content button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #008cff;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card-content button:hover {
+    background-color: #006fd6;
+}
+ 
+
+
+.social-insta {
+    position: relative;
+    top: 120px;
+    right: 20px;
+    font-size: 32px;
+    color: rgba(250, 250, 250, 0.589);
+    margin: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-github {
+    position: relative;
+    top: 82px;
+    right: -25px;
+    font-size: 32px;
+    color: rgba(248, 248, 248, 0.589);
+    margin: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+
+/* From Uiverse.io by Juanes200122 */ 
+#svg-global {
+    position: relative;
+    top: 50px;
+  zoom: 1.2;
+  overflow: visible;
+
+}
+
+@keyframes fade-particles {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+}
+
+#particles {
+  animation: fade-particles 5s infinite alternate;
+}
+.particle {
+  animation: floatUp linear infinite;
+}
+
+.p1 {
+  animation-duration: 2.2s;
+  animation-delay: 0s;
+}
+.p2 {
+  animation-duration: 2.5s;
+  animation-delay: 0.3s;
+}
+.p3 {
+  animation-duration: 2s;
+  animation-delay: 0.6s;
+}
+.p4 {
+  animation-duration: 2.8s;
+  animation-delay: 0.2s;
+}
+.p5 {
+  animation-duration: 2.3s;
+  animation-delay: 0.4s;
+}
+.p6 {
+  animation-duration: 3s;
+  animation-delay: 0.1s;
+}
+.p7 {
+  animation-duration: 2.1s;
+  animation-delay: 0.5s;
+}
+.p8 {
+  animation-duration: 2.6s;
+  animation-delay: 0.2s;
+}
+.p9 {
+  animation-duration: 2.4s;
+  animation-delay: 0.3s;
+}
+
+@keyframes bounce-lines {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+#line-v1,
+#line-v2,
+#node-server,
+#panel-rigth,
+#reflectores,
+#particles {
+  animation: bounce-lines 3s ease-in-out infinite alternate;
+}
+#line-v2 {
+  animation-delay: 0.2s;
+}
+
+#node-server,
+#panel-rigth,
+#reflectores,
+#particles {
+  animation-delay: 0.4s;
+}
+
